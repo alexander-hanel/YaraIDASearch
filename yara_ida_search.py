@@ -100,7 +100,4 @@ class YaraIDASearch:
 
     def reload_scan_memory(self):
         self._get_memory()
-        
-
-y = YaraIDASearch()
-print(y.find_text("GetProcAddress"))
+       
