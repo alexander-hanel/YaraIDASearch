@@ -50,7 +50,7 @@ class YaraIDASearch:
             if SEARCH_UNICODE & sflag:
                 signature += " wide"
         elif sig_type == "binary":
-            signature = " %s " % pattern
+            signature = "{ %s }" % pattern
         elif sig_type == "text" and (SEARCH_REGEX & sflag) == False:
             signature = '"%s"' % pattern
             if SEARCH_CASE & sflag:
